@@ -1,17 +1,12 @@
 // src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import HomePage from './HomePage'; // 引入 HomePage 组件
-import LoginPage from './LoginPage'; // 引入 LoginPage 组件
+import ReactDOM from 'react-dom/client';
+import App from './App'; // 确保有一个 App.js 文件
+import './index.css'; // 如果有全局样式
 
-// 选择要渲染的页面
-const App = () => {
-  return (
-    <div>
-      <HomePage />
-      {/* <LoginPage /> 你可以在需要时切换这个 */}
-    </div>
-  );
-};
-
-ReactDOM.render(<App />, document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
