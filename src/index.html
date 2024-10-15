@@ -1,13 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Project Title</title>
-    <link rel="stylesheet" href="styles.css"> <!-- 如果有样式表 -->
-</head>
-<body>
-    <div id="root"></div>
-    <script src="your-script.js"></script> <!-- 替换为你的JS文件 -->
-</body>
-</html>
+<script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type="text/babel">
+    // 你的 React 组件代码
+    function App() {
+        return <h1>Hello, world!</h1>;
+    }
+
+    ReactDOM.render(<App />, document.getElementById('root'));
+</script>
